@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Keypad</title>
+        <meta name="author" content="Shawn Wilson"/>
+        <meta name="description" 
+           content="An iphone keypad simulation."/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+        <meta http-equiv="Content-Style-Type" content="text/css"/>
+  
+        <!-- Here's the code that handles the keypad typing -->
+        <script type="text/javascript"> 
+  		null;
+        </script>
+ 
+    </head>
+
+	<body>
+
+    	<!-- Here's where the keypad goes.  It is an html5 canvas. -->
+    	<canvas id="keypad" width=600 height=800></canvas>
+		<script>
+			var canvas = document.getElementById('keypad');	
+			var context = canvas.getContext('2d');
+			var centerX = canvas.width / 2;
+			var centerY = canvas.height / 2;
+			var radius = 50;
+
+
+			context.beginPath();
+            context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+            context.fillStyle = 'cyan';
+            context.fill();
+            context.lineWidth = 5;
+            context.strokeStyle = '#003300';
+            context.stroke();
+
+			context.font = "80px Arial";
+			context.fillStyle = 'black'; 
+			context.fillText("1", centerX - 23, centerY + 25);
+
+
+		</script>
+
+	</body>
+</html>
+
+

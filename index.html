@@ -1,29 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 
-   <head>
-      <title>Expenses</title>
-      <meta name="author" content="Shawn Wilson"/>
-      <meta name="description" 
-         content="An iphone keypad simulation."/>
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-      <meta http-equiv="Content-Script-Type" content="text/javascript"/>
-      <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <head>
+        <title>Keypad</title>
+        <meta name="author" content="Shawn Wilson"/>
+        <meta name="description" 
+           content="An iphone keypad simulation."/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+        <meta http-equiv="Content-Style-Type" content="text/css"/>
+  
+        <!-- Include the stylesheet. -->
+        <link rel="stylesheet" type="text/css" href="keypad.css">
+ 
+    </head>
 
-      <!-- Here's the code that handles the keypad typing -->
-      <script type="text/javascript"> 
-		null;
-      </script>
+    <body>
+        <div id="calculator">
+            <!-- Screen and clear key -->
+            <div class="top">
+                <div class="screen"></div>
+            </div>
+            
+            <div class="keys">
+                <!-- operators and other keys -->
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>0</span>
+            </div>
+        </div>
+    </body>      
 
-   </head>
-
-   <!-- Here's where the keypad goes.  It is just a stub.  It will get 
-        filled in later via the javascript routines. -->
-   <div id="keypad">
-   </div>
-
-
+    <!-- Include the code that makes the keypad work. -->
+    <script src="keypad.js"></script>
 </html>
-
-
