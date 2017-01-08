@@ -6,6 +6,13 @@
     </head>
 
     <body>
-       Door is open (maybe)!!!
+       Door is open (maybe)!!!<br/>
+       your PIN code was: <span style="color:red;font-size:200%;" id="showpin"/>
+
     </body> 
+
+    <script>
+        document.getElementById("showpin").innerHTML = 
+            window.location.search.substring(5, 9);
+    </script>
 </html>
