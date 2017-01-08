@@ -30,10 +30,11 @@ html {
 	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Top portion */
+/* Top portion 
 .top span.clear {
 	float: left;
 }
+*/
 
 /* Inset shadow on the screen to create indent */
 .top .screen {
@@ -108,6 +109,10 @@ html {
 	background: #ff9fa8;
 	box-shadow: 0px 4px #ff7c87;
 	color: white;
+}
+
+.keys span.zero {
+	margin: 0 7px 11px 73px;
 }
 
 /* Some hover effects */
