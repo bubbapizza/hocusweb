@@ -24,15 +24,14 @@ for(var i = 0; i < keys.length; i++) {
 		}
 
         /* Show the current pinCode. */
+        input.innerHTML = "**********".substring(0, pinCode.length);
+
         /* If we hit the number of PIN code digits, submit the pin code. */
         if (pinCode.length == pinDigits) {
-            input.innerHTML = pinCode;
+            document.getElementById('pin').value = pinCode;
+            document.getElementById('openDoor').submit()
         }
 
-        else {
-            input.innerHTML = "**********".substring(0, pinCode.length);
-        }
-		
 		// prevent page jumps
 		e.preventDefault();
 	} 
