@@ -1,0 +1,4 @@
+This is an attempt at adding a web front-end to the 
+abracadabra-hocuspocus door controller.  In the end, it just uses a 
+SQL database to validate two-factor authentication based on a user's 
+IP address and PIN code.
