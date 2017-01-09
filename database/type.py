@@ -20,7 +20,7 @@ class doorControllerDB(helper.database):
             helper.database.__init__(self, uri, **kwargs)
         
 
-    def validate_key_code(self, code):
+    def validate_key_code(self, code, passwd):
         """Check the KeyCode table to make sure we have a user
         associated with the key and the key is enabled.  Return True
         or False depending on the result."""
